@@ -1,6 +1,5 @@
 # ~/.bashrc
-grep -q "^alias ll=" ~/.bashrc || echo "alias ll='ls --color=auto -alF'" >> ~/.bashrc
-source ~/.bashrc
+grep -q "^alias ll=" ~/.bashrc || (echo "alias ll='ls --color=auto -alF'" >> ~/.bashrc && source ~/.bashrc)
 
 # ~/.ssh/
 mkdir -p ~/.ssh
